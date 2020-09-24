@@ -5,6 +5,7 @@ void setup() {
   valueDivisible(5);
   getRandom(arr);
   intRecursion(count2);
+  fibunacci(1,1);
 }
 //4.a
 int[] valueDivisible(int x) {
@@ -39,3 +40,11 @@ void intRecursion(int y) {
     intRecursion(count2);
   }
 }
+
+ //4.e
+  void fibunacci(int num1, int num2) {
+    if (num1+num2 < 10000) {
+      println(num1 +"\t"+num2+": "+ (num1+num2));
+      fibunacci(num2, num1+num2);
+    }
+  }
